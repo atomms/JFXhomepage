@@ -1,4 +1,14 @@
-
-#homeBTNS :hover {
-    -fx-background-color: #ff895e;
+.homeBTNS :hover {
+    -fx-background-color: #ff895e;   
 }
+
+.image1{
+	-fx-background-image: url("island.jpg");
+	-fx-background-size: cover, auto;
+	
+	-fx-min-height: 132px;
+    -fx-min-width: 128px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center 8px;
+	
+	}

@@ -1,38 +1,29 @@
 package sample;
 
-import java.net.URL;
-import java.util.ResourceBundle;
-
 import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
-import javafx.fxml.Initializable;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
 
 
-public class Controller  implements Initializable{
+public class Controller {
 
     @FXML
-    private AnchorPane pane1 ,pane2,pane3,pane4 , opacityPane,drawerPane;
+    private AnchorPane pane1,pane2,pane3,pane4,opacityPane,drawerPane;
 
 
     @FXML
     private ImageView drawerImage;
 
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
+
+    public void initialize() {
 
         opacityPane.setVisible(false);
 
-//        FadeTransition fadeTransition=new FadeTransition(Duration.seconds(0.5),opacityPane);
-//        fadeTransition.setFromValue(1);
-//        fadeTransition.setToValue(0);
-//        fadeTransition.play();
-
         TranslateTransition translateTransition=new TranslateTransition(Duration.seconds(0.5),drawerPane);
-        translateTransition.setByX(-300);
+        translateTransition.setByX(-200);
         translateTransition.play();
 
         pane1.setStyle("-fx-background-image: url('sample/1.jpg')");
@@ -42,25 +33,24 @@ public class Controller  implements Initializable{
 
         Animation();
 
-
         drawerImage.setOnMouseClicked(event -> {
 
             opacityPane.setVisible(true);
 
             FadeTransition fadeTransition1=new FadeTransition(Duration.seconds(0.5),opacityPane);
             fadeTransition1.setFromValue(0);
-            fadeTransition1.setToValue(0.6);
+            fadeTransition1.setToValue(0.3);
             fadeTransition1.play();
 
             TranslateTransition translateTransition1=new TranslateTransition(Duration.seconds(0.5),drawerPane);
-            translateTransition1.setByX(+300);
+            translateTransition1.setByX(200);
             translateTransition1.play();
         });
 
         opacityPane.setOnMouseClicked(event -> {
 
             FadeTransition fadeTransition1=new FadeTransition(Duration.seconds(0.5),opacityPane);
-            fadeTransition1.setFromValue(0.6);
+            fadeTransition1.setFromValue(0.3);
             fadeTransition1.setToValue(0);
             fadeTransition1.play();
 
@@ -69,7 +59,7 @@ public class Controller  implements Initializable{
             });
 
             TranslateTransition translateTransition1=new TranslateTransition(Duration.seconds(0.5),drawerPane);
-            translateTransition1.setByX(-300);
+            translateTransition1.setByX(-200);
             translateTransition1.play();
         });
 
