@@ -18,6 +18,8 @@ public class Main extends Application {
         scene.getStylesheets().addAll(getClass().getResource("style.css").toExternalForm());
         primaryStage.setTitle("Home page");
         primaryStage.setScene(scene);
+        primaryStage.setMinHeight(700);
+        primaryStage.setMinWidth(700);
         primaryStage.show();
 
     }
