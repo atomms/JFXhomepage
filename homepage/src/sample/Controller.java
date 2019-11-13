@@ -5,14 +5,17 @@ import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Pane;
 import javafx.util.Duration;
 
 
 public class Controller {
 
     @FXML
-    private AnchorPane pane1,pane2,pane3,pane4,opacityPane,drawerPane;
+    private AnchorPane opacityPane,drawerPane;
 
+    @FXML
+    private Pane pane1,pane2,pane3,pane4;
 
     @FXML
     private ImageView drawerImage;
