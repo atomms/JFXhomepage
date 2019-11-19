@@ -6,6 +6,13 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+
+/**
+ * 
+ * @author ernesto
+ * @see Controller
+ */
+
 public class Main extends Application {
 
     @Override
