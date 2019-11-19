@@ -1,3 +1,15 @@
+.header {
+    -fx-background-color: #0000ff;   
+}
+
+.gradpane{
+	-fx-background-color: linear-gradient(#2A5058, #ffa2b1);
+}
+
+.homeBTNS {
+    -fx-background-color: #ff895e;       
+}
+
 .homeBTNS :hover {
     -fx-background-color: #ff895e;   
 }

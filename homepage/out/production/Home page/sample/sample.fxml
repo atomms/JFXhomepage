@@ -19,28 +19,29 @@
          <top>
             <VBox BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane prefHeight="55.0" style="-fx-background-color: #04afff;">
+                  <AnchorPane prefHeight="55.0" styleClass="header">
                      <children>
-                        <ImageView fx:id="drawerImage" fitHeight="28.0" fitWidth="34.0" layoutX="43.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="drawerImage" fitHeight="28.0" fitWidth="34.0" layoutX="30.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@drawer.png" />
                            </image>
                         </ImageView>
                      </children>
                   </AnchorPane>
-                  <AnchorPane prefHeight="300.0">
+                  <AnchorPane prefHeight="300.0" styleClass="gradpane">
                      <children>
                         <Pane fx:id="pane1" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                         <Pane fx:id="pane2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                           <Pane fx:id="pane3" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                            <Pane fx:id="pane4" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <Pane layoutX="10.0" layoutY="10.0" styleClass="gradpane" />
                      </children>
                   </AnchorPane>
                </children>
             </VBox>
          </top>
          <center>
-            <GridPane minHeight="300.0" minWidth="300.0" opacity="0.76" prefHeight="469.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+            <GridPane minHeight="300.0" minWidth="300.0" opacity="0.76" BorderPane.alignment="CENTER">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -52,7 +53,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <JFXButton prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: #04afff;" styleClass="homeBTNS" text="SECTION 1" textFill="WHITE">
+                  <JFXButton prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #04afff;" styleClass="homeBTNS" text="SECTION 1" textFill="WHITE">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -77,7 +78,7 @@
                         <Font size="14.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton layoutX="282.0" layoutY="167.0" prefHeight="174.0" prefWidth="289.0" style="-fx-background-color: #04afff;" styleClass="homeBTNS" text="SECTION 6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <JFXButton layoutX="282.0" layoutY="167.0" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #04afff;" styleClass="homeBTNS" text="SECTION 6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
                      <font>
                         <Font size="14.0" />
                      </font>
@@ -104,7 +105,7 @@
             </GridPane>
          </center>
       </BorderPane>
-      <AnchorPane fx:id="opacityPane" layoutX="47.0" layoutY="340.0" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane fx:id="opacityPane" style="-fx-background-color: #000;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <AnchorPane fx:id="drawerPane" layoutX="-1.0" layoutY="52.0" prefWidth="200.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">

@@ -42,7 +42,7 @@ public class Controller {
 
             FadeTransition fadeTransition1=new FadeTransition(Duration.seconds(0.5),opacityPane);
             fadeTransition1.setFromValue(0);
-            fadeTransition1.setToValue(0.3);
+            fadeTransition1.setToValue(0.4);
             fadeTransition1.play();
 
             TranslateTransition translateTransition1=new TranslateTransition(Duration.seconds(0.5),drawerPane);
@@ -53,7 +53,7 @@ public class Controller {
         opacityPane.setOnMouseClicked(event -> {
 
             FadeTransition fadeTransition1=new FadeTransition(Duration.seconds(0.5),opacityPane);
-            fadeTransition1.setFromValue(0.3);
+            fadeTransition1.setFromValue(0.4);
             fadeTransition1.setToValue(0);
             fadeTransition1.play();
 
